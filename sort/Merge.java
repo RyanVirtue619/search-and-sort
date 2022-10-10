@@ -24,30 +24,14 @@ public class Merge
         int index = 0;
         int[] left = new int[leftLength];
         int[] right = new int[rightLength];
-        while(index < middle) {
-            left[index] = ar[index];
-            index++;
-        }
-        int rightIndex = 0;
-        index = middle;
-        while(index<N) {
-            right[rightIndex] = ar[index];
-            rightIndex++;
-            index++;
-        }
-        System.out.println();
-        for(int i = 0; i < left.length-1; i++) {
-            System.out.print(left[i] + " ");
-        }
-        for(int i = 0; i < right.length-1; i++) {
-            System.out.print(right[i] + " ");
-        }
-        sort(left);
-        sort(right);
-        
-        Merge(left, right);
-        return marged;
+        return ar;
     }
+    
+    public static int[] mergeSort(int[] arr, int left, int middle, int right) {
+        
+    }
+    
+    public static 
     
     public static int[] Merge(int[] left, int[] right) {
         int[] marged = new int[left.length + right.length];
